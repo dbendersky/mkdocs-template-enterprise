@@ -2,17 +2,25 @@ name: ci
 on:
   push:
     branches:
-      - master
+      - main
+  pull_request:
+    branches:
       - main
   workflow_dispatch: # we can run this: gh workflow run ci.yml
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
