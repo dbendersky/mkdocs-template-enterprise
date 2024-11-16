@@ -24,6 +24,8 @@ theme:
   features:
     - content.tooltips
     - content.action.edit
+    - content.action.meta
+    - content.action.view
     - header.autohide
     - navigation.instant
     - navigation.tracking
