@@ -21,7 +21,7 @@ markdown_extensions: # (1)!
   - md_in_html
 ```
 
-1.  Note that some of the examples listed below use [icons and emojis], which
+1. Note that some of the examples listed below use [icons and emojis], which
     have to be [configured separately].
 
 See additional configuration options:
@@ -29,10 +29,10 @@ See additional configuration options:
 - [Attribute Lists]
 - [Markdown in HTML]
 
-  [icons and emojis]: icons-emojis.md
-  [configured separately]: icons-emojis.md#configuration
-  [Attribute Lists]: ../setup/extensions/python-markdown.md#attribute-lists
-  [Markdown in HTML]: ../setup/extensions/python-markdown.md#markdown-in-html
+  [icons and emojis]: #
+  [configured separately]: #
+  [Attribute Lists]: #
+  [Markdown in HTML]: #
 
 ## Usage
 
@@ -81,6 +81,7 @@ classes:
 - :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
 
   </div>
+
 </div>
 
 List elements can contain arbitrary Markdown, as long as the surrounding `div`
@@ -129,7 +130,7 @@ includes icons and links:
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
--   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
+- :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
 
     ---
 
@@ -138,7 +139,7 @@ includes icons and links:
 
     [:octicons-arrow-right-24: Getting started][getting started]
 
--   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
+- :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
 
     ---
 
@@ -146,7 +147,7 @@ includes icons and links:
 
     [:octicons-arrow-right-24: Reference][reference]
 
--   :material-format-font:{ .lg .middle } __Made to measure__
+- :material-format-font:{ .lg .middle } __Made to measure__
 
     ---
 
@@ -154,7 +155,7 @@ includes icons and links:
 
     [:octicons-arrow-right-24: Customization][customization]
 
--   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+- :material-scale-balance:{ .lg .middle } __Open Source, MIT__
 
     ---
 
@@ -163,6 +164,7 @@ includes icons and links:
     [:octicons-arrow-right-24: License][license]
 
   </div>
+
 </div>
 
 If there's insufficient space to render grid items next to each other, the items
@@ -171,13 +173,13 @@ there's more space available, grids will render in items of 3 and more, e.g.
 when [hiding both sidebars].
 
   [mkdocs-material]: https://pypistats.org/packages/mkdocs-material
-  [pip]: ../getting-started.md#with-pip
-  [getting started]: ../getting-started.md
-  [reference]: ../reference/index.md
-  [customization]: ../customization.md
-  [license]: ../license.md
-  [GitHub]: https://github.com/squidfunk/mkdocs-material
-  [hiding both sidebars]: ../setup/setting-up-navigation.md#hiding-the-sidebars
+  [pip]: #
+  [getting started]: #
+  [reference]: #
+  [customization]: #
+  [license]: #
+  [GitHub]: #
+  [hiding both sidebars]: #
 
 #### Block syntax
 
@@ -296,6 +298,6 @@ by using a `div` with the `grid` class:
   </div>
 </div>
 
-  [admonitions]: admonitions.md
-  [code blocks]: code-blocks.md
-  [content tabs]: content-tabs.md
+  [admonitions]: #
+  [code blocks]: #
+  [content tabs]: #
