@@ -1,8 +1,13 @@
+# Project information
 site_name: Mkdocs Material Example
 site_description: Just a tester
+
+# Repository
 repo_name: shaneholloman/mkdocs-material-example
 repo_url: https://github.com/shaneholloman/mkdocs-material-example
 edit_uri: blob/main/docs/
+
+# Copyright
 copyright: Copyright &copy; shaneholloman
 
 nav:
@@ -17,6 +22,7 @@ nav:
 theme:
   name: material
   features:
+    - content.tooltips
     - content.action.edit
     - header.autohide
     - navigation.instant
@@ -29,6 +35,7 @@ theme:
     - navigation.tabs
     - navigation.footer
     - content.code.copy
+    - content.footnote.tooltips
   icon:
     repo: fontawesome/brands/github
   palette:
@@ -51,12 +58,41 @@ theme:
         name: Switch to light mode
 
 markdown_extensions:
+  - abbr
+  - attr_list
+  - md_in_html
   - admonition
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.details
   - pymdownx.keys
+  - pymdownx.blocks.caption
   - pymdownx.superfences
+      # custom_fences:
+      #   - name: mermaid
+      #     class: mermaid
+      #     format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.tabbed:
       alternate_style: true
+  - tables
+  - footnotes
+
+plugins:
+  - search
+  - tags
+
 
 extra_css:
   - static/extra.css
