@@ -43,7 +43,9 @@ jobs:
         uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ steps.cache-key.outputs.week }}-${{ steps.cache-key.outputs.hash }}
-          path: .cache
+          path: |
+            ~/.cache/pip
+            ~/.local/lib/python*/site-packages
           restore-keys: |
             mkdocs-material-${{ steps.cache-key.outputs.week }}-
             mkdocs-material-
