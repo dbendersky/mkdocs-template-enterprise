@@ -1,7 +1,7 @@
 site_name: Mkdocs Material Example
 site_description: Just a tester
 repo_name: shaneholloman/mkdocs-material-example
-repo_url: https://github.com/vra/mkdocs-material-example
+repo_url: https://github.com/shaneholloman/mkdocs-material-example
 copyright: Copyright &copy; shaneholloman
 
 nav:
