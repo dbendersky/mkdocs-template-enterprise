@@ -1,17 +1,16 @@
 site_name: Mkdocs Material Example
-site_description: An Experimental Package Management Solution for Python
-repo_name: vra/mkdocs-material-example
+site_description: Just a tester
+repo_name: shaneholloman/mkdocs-material-example
 repo_url: https://github.com/vra/mkdocs-material-example
-copyright: Copyright &copy; 2023 Yunfeng Wang
-
+copyright: Copyright &copy; shaneholloman
 
 nav:
   - Welcome: index.md
   - User Guide:
-    - guide/index.md
-    - Installation: guide/installation.md
-    - Basics: guide/basics.md
-    - Configuration: guide/config.md
+      - guide/index.md
+      - Installation: guide/installation.md
+      - Basics: guide/basics.md
+      - Configuration: guide/config.md
   - Changelog: changelog.md
 
 theme:
@@ -30,19 +29,18 @@ theme:
     - content.code.copy
   icon:
     repo: fontawesome/brands/github
-  palette: 
-
+  palette:
     # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
+    - media: '(prefers-color-scheme: light)'
       scheme: default
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
       primary: teal #, [red, pink, purple, deep, purple, indigo, blue, light blue, cyan, teal, green, light green, lime, yellow, amber, orange, deep orange, brown, grey, blue, grey, black, white]
       accent: cyan # [red, pink, purple, deep, purple, indigo, blue, light, blue, cyan, teal, green, light, green, lime, yellow, amber, orange, deep orange]
 
     # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
+    - media: '(prefers-color-scheme: dark)'
       scheme: slate
       primary: teal #, [red, pink, purple, deep, purple, indigo, blue, light blue, cyan, teal, green, light green, lime, yellow, amber, orange, deep orange, brown, grey, blue, grey, black, white]
       accent: cyan # [red, pink, purple, deep, purple, indigo, blue, light, blue, cyan, teal, green, light, green, lime, yellow, amber, orange, deep orange]
@@ -56,7 +54,7 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.superfences
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
 
 extra_css:
   - static/extra.css
