@@ -10,14 +10,14 @@ edit_uri: blob/main/docs/
 # Copyright
 copyright: Copyright &copy; shaneholloman
 
-nav:
-  - Welcome: index.md
-  - User Guide:
-      - guide/index.md
-      - Installation: guide/installation.md
-      - Basics: guide/basics.md
-      - Configuration: guide/config.md
-  - Changelog: changelog.md
+# nav:
+#   - Welcome: index.md
+#   - User Guide:
+#       - guide/index.md
+#       - Installation: guide/installation.md
+#       - Basics: guide/basics.md
+#       - Configuration: guide/config.md
+#   - Changelog: changelog.md
 
 theme:
   name: material
