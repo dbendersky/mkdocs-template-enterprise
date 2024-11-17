@@ -97,6 +97,7 @@ markdown_extensions:
 plugins:
   - search
   - tags
+  - meta
 
 
 extra_css:
