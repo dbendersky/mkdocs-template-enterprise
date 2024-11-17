@@ -1,5 +1,7 @@
 # Notes
 
+[[toc]]
+
 ## GitHub Copilot
 
 <https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot>
