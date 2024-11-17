@@ -1,3 +1,5 @@
 {
-  "ansible.python.interpreterPath": "c:\\Users\\shane\\Dropbox\\cello\\bookstack\\cello-knowledge-refactor\\.conda\\python.exe"
+  "yaml.schemas": {
+    "https://json.schemastore.org/mkdocs-1.6.json": "file:///c%3A/Users/shane/git/mkdocs-material-example/mkdocs.yml"
+  }
 }
