@@ -1,4 +1,4 @@
-# MkDocs GH-Pages Deployment Example
+# MkDocs Template
 
 [![ci](https://github.com/shaneholloman/mkdocs-material-example/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman/mkdocs-material-example/actions/workflows/ci.yml)
 
