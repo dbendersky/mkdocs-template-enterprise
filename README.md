@@ -8,8 +8,6 @@ View the documentation at:
 
 `https://<username>.github.io/<repository-name>`
 
-<https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}>
-
 <https://shaneholloman.github.io/mkdocs-material-example/>
 
 ## Private Pages Configuration
