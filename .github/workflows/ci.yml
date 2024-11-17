@@ -5,10 +5,12 @@ on:
     paths:
       - 'docs/**'
       - 'mkdocs.yml'
+      - '.github/workflows/ci.yml'
   pull_request:
     paths:
       - 'docs/**'
       - 'mkdocs.yml'
+      - '.github/workflows/ci.yml'
   workflow_dispatch:
 
 permissions:
