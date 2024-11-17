@@ -33,6 +33,12 @@ jobs:
           cache: 'pip'
           cache-dependency-path: '**/requirements.txt'
 
+      - name: Configure Git for private modules
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git config --global url."https://${GH_TOKEN}@github.com/".insteadOf "https://github.com/"
+
       - name: Generate cache key
         id: cache-key
         run: |
@@ -42,16 +48,19 @@ jobs:
       - name: Cache dependencies
         uses: actions/cache@v4
         with:
-          key: mkdocs-material-${{ steps.cache-key.outputs.week }}-${{ steps.cache-key.outputs.hash }}
+          key: mkdocs-material-insiders-${{ steps.cache-key.outputs.week }}-${{ steps.cache-key.outputs.hash }}
           path: |
             ~/.cache/pip
             ~/.local/lib/python*/site-packages
           restore-keys: |
-            mkdocs-material-${{ steps.cache-key.outputs.week }}-
-            mkdocs-material-
+            mkdocs-material-insiders-${{ steps.cache-key.outputs.week }}-
+            mkdocs-material-insiders-
 
       - name: Install dependencies
-        run: pip install mkdocs-material
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
 
       - name: Build documentation
         run: mkdocs build
@@ -63,10 +72,10 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'site'
-          name: github-pages  # Explicit artifact name
+          name: github-pages
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          artifact_name: github-pages  # Match the upload name
+          artifact_name: github-pages
