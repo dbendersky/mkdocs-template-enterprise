@@ -6,7 +6,7 @@
 
 ## Default Deployment Location
 
-View the documentation at:
+View doc output here:
 
 ```txt
 https://<username>.github.io/<repository-name>
